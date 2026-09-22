@@ -1,0 +1,16 @@
+
+h1 {
+    color: red; 
+    font-zise: 30px;
+
+}
+/* untuk p warna hijau dan ukuran font 10px */
+p { 
+    color: green;
+    font-zise: 10px
+
+}
+/* untuk h2 ukuran font 20px */
+h2 { 
+    font-zise: 20px;
+}
