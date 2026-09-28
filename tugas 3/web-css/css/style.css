@@ -1,55 +1,106 @@
-/* buat body berwarna abu abu dan fontnya bertipe arial dan sans serif ukuran 16px  */
+/* buat body berwarna krem lembut (soft beige) dan font yang lebih luwes */
 body {
-    background-color: grey;
-    font-family: Arial, sans-serif;
+    background-color: #f4efeb; 
+    color: #5c4a43; /* warna teks utama menjadi cokelat keabu-abuan lembut */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
 }
 
-/* membuat canvas putih ditengah  */
+/* membuat canvas putih ditengah dengan bayangan tipis */
 .container {
     background-color: white;
     margin: 0 auto;
     padding: 20px;
-    width: 800px
-   
+    width: 800px;
+    border-radius: 12px; /* tambahan sedikit lengkungan di sudut biar manis */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04); /* tambahan bayangan super tipis */
 }
 
-/* mengatur jarak dalam header  */
+/* mengatur jarak dalam header */
 .header {
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
-
 }
-/* mengatur judul  */
+
+/* mengatur judul */
 .header .judul {    
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #8a6a5c; /* warna judul cokelat manis / mocca */
 }
 
-/* untuk navigasi atau menu atas  */
-
+/* untuk navigasi atau menu atas */
 .nav { 
     padding: 0px;
 }
 
 .nav li { 
-    /* membuat list navigasi menjadi horizontal dan mengatur jarak antar menu */
     display: inline-block;
     margin-right: 10px;
     margin-top: 20px;
 }
 
+/* mengatur tampilan link navigasi */
 .nav li a { 
-/* untuk menghilangkan garis bawah pada link navigasi dan menhatur warna link navigasi  */
     text-decoration: none;
-    color: navy;
+    color: #a78077; /* warna pink kecokelatan yang soft */
+    padding: 8px 16px; /* memberi ruang agar terlihat seperti tombol oval */
+    border-radius: 20px; 
+    transition: 0.3s; /* efek transisi warna agar lembut saat disorot */
 }
 
-/* membuat animasi saat link disorot  */
+/* efek saat link disorot mouse (hover) */
 .nav li a:hover { 
-    background-color: orange;
-    color: white;
+    background-color: #f0e6e1; /* latar belakang berubah jadi soft peach */
+    color: #5c4a43;
+}
 
+/* untuk css banner */
+.banner {
+    height: 300px;
+    background-image: url(../img/cheesecake-premium.png);
+    background-size: cover;
+    background-position: center; /* posisi gambar otomatis ke tengah */
+    border-top: 5px solid #d4b4aa; /* garis atas warna dusty rose */
+    border-bottom: 5px solid #e8d5cf; /* garis bawah pastel muda */
+    margin-top: 15px; 
+    border-radius: 8px; /* sudut gambar sedikit membulat biar tidak kaku */
+}
+
+/* untuk isi */
+.isi {
+    padding: 20px;
+}
+ 
+.isi h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #8a6a5c; /* disamakan dengan warna judul utama */
+}
+ 
+.isi .penulis {
+    font-size: 14px;
+    margin-top: -10px;
+    color: #999;
+}
+ 
+.isi .penulis a {
+    text-decoration: none;
+    color: #c48b81; /* link penulis warna soft coral */
+}
+ 
+.isi p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6; /* jarak antar baris teks diperlebar agar nyaman dibaca */
+}
+
+/* untuk footer */
+.footer {
+    padding: 20px;
+    font-size: 14px;
+    text-align: center; /* teks diletakkan di tengah */
+    color: #a78077;
 }
